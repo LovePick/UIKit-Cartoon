@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C14D061A2921CF1700C0B876 /* CartoonsListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14D06192921CF1700C0B876 /* CartoonsListViewControllerTest.swift */; };
 		C157AD11292100E10023552B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C157AD10292100E10023552B /* AppDelegate.swift */; };
 		C157AD1A292100E30023552B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C157AD19292100E30023552B /* Assets.xcassets */; };
 		C157AD1D292100E30023552B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C157AD1B292100E30023552B /* LaunchScreen.storyboard */; };
@@ -24,7 +25,19 @@
 		C157AD40292112F20023552B /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C157AD3F292112F20023552B /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C14D06132921CED200C0B876 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C157AD05292100E10023552B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C157AD0C292100E10023552B;
+			remoteInfo = Cartoons;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		C14D060F2921CED200C0B876 /* CartoonsUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CartoonsUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C14D06192921CF1700C0B876 /* CartoonsListViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartoonsListViewControllerTest.swift; sourceTree = "<group>"; };
 		C157AD0D292100E10023552B /* Cartoons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cartoons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C157AD10292100E10023552B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C157AD19292100E30023552B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +58,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C14D060C2921CED200C0B876 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C157AD0A292100E10023552B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -55,10 +75,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C14D06102921CED200C0B876 /* CartoonsUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				C14D06182921CEE800C0B876 /* CartoonListTest */,
+			);
+			path = CartoonsUnitTests;
+			sourceTree = "<group>";
+		};
+		C14D06182921CEE800C0B876 /* CartoonListTest */ = {
+			isa = PBXGroup;
+			children = (
+				C14D06192921CF1700C0B876 /* CartoonsListViewControllerTest.swift */,
+			);
+			path = CartoonListTest;
+			sourceTree = "<group>";
+		};
 		C157AD04292100E10023552B = {
 			isa = PBXGroup;
 			children = (
 				C157AD0F292100E10023552B /* Cartoons */,
+				C14D06102921CED200C0B876 /* CartoonsUnitTests */,
 				C157AD0E292100E10023552B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				C157AD0D292100E10023552B /* Cartoons.app */,
+				C14D060F2921CED200C0B876 /* CartoonsUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +175,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C14D060E2921CED200C0B876 /* CartoonsUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C14D06172921CED200C0B876 /* Build configuration list for PBXNativeTarget "CartoonsUnitTests" */;
+			buildPhases = (
+				C14D060B2921CED200C0B876 /* Sources */,
+				C14D060C2921CED200C0B876 /* Frameworks */,
+				C14D060D2921CED200C0B876 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C14D06142921CED200C0B876 /* PBXTargetDependency */,
+			);
+			name = CartoonsUnitTests;
+			productName = CartoonsUnitTests;
+			productReference = C14D060F2921CED200C0B876 /* CartoonsUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C157AD0C292100E10023552B /* Cartoons */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C157AD21292100E30023552B /* Build configuration list for PBXNativeTarget "Cartoons" */;
@@ -164,6 +220,11 @@
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
+					C14D060E2921CED200C0B876 = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
+						TestTargetID = C157AD0C292100E10023552B;
+					};
 					C157AD0C292100E10023552B = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -183,11 +244,19 @@
 			projectRoot = "";
 			targets = (
 				C157AD0C292100E10023552B /* Cartoons */,
+				C14D060E2921CED200C0B876 /* CartoonsUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C14D060D2921CED200C0B876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C157AD0B292100E10023552B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -200,6 +269,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C14D060B2921CED200C0B876 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C14D061A2921CF1700C0B876 /* CartoonsListViewControllerTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C157AD09292100E10023552B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,6 +299,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C14D06142921CED200C0B876 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C157AD0C292100E10023552B /* Cartoons */;
+			targetProxy = C14D06132921CED200C0B876 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		C157AD1B292100E30023552B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -234,6 +319,55 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C14D06152921CED200C0B876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4836KR52L9;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pucknavin.CartoonsUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cartoons.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cartoons";
+			};
+			name = Debug;
+		};
+		C14D06162921CED200C0B876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4836KR52L9;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pucknavin.CartoonsUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cartoons.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cartoons";
+			};
+			name = Release;
+		};
 		C157AD1F292100E30023552B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -405,6 +539,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C14D06172921CED200C0B876 /* Build configuration list for PBXNativeTarget "CartoonsUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C14D06152921CED200C0B876 /* Debug */,
+				C14D06162921CED200C0B876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C157AD08292100E10023552B /* Build configuration list for PBXProject "Cartoons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

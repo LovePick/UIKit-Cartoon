@@ -28,6 +28,7 @@ class CartoonsListViewController: UIViewController, CartoonsList_View_Protocol {
     // MARK: - PROPERTY
     var presenter: CartoonsList_Presenter_Protocol?
     var cartoons: [Cartoon] = []
+   
     
     // MARK: - LIFE CYCLE
     override func viewDidLoad() {
@@ -96,6 +97,7 @@ extension CartoonsListViewController {
     }
     
     func update(with error: String) {
+ 
         DispatchQueue.main.async { [weak self] in
             self?.cartoons = []
             self?.tableView.isHidden = true
@@ -129,6 +131,19 @@ extension CartoonsListViewController: UITableViewDataSource {
         content.secondaryText = "\(cartoons[indexPath.row].year)"
         cell.contentConfiguration = content
         return cell
+    }
+    
+    
+}
+
+// MARK: - Unit Testing
+extension CartoonsListViewController {
+    func errorMessageForTesting() -> String? {
+        return messageLabel.text
+    }
+    
+    func errorLabelIsHiddenForTest() -> Bool {
+        return messageLabel.isHidden
     }
     
     
